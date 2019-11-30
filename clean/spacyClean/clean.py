@@ -26,11 +26,4 @@ class Clean():
     def removeEmoji(self,text):
         return [i.text for i in self.nlp(text) if not i.is_emoji]
 
-    def standardCleaning(self,text):
-        text = self.lemma(text)
-        text = self.removeEmoji(text)
-        text = self.removePunct(text)
-        text = self.removeStopWord(text)
-        return text
-
 #to do Unittest
