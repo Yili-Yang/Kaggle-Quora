@@ -1,10 +1,10 @@
 import sys
 sys.path.append("..")
-from spacyClean.clean import Clean
+from clean.spacyClean.clean import Clean
 import gensim 
 from gensim.models import Word2Vec
 from bert_embedding import BertEmbedding
-class vectorization(Clean):
+class Vectorization(Clean):
     
     def __init__(self):
         '''get all the methods from Clean module'''
@@ -25,8 +25,10 @@ class vectorization(Clean):
     
     def Glove(self,text):
         #to do
+        return
     
     def tfidf(self,text):
         #to do
+        return
     
     
